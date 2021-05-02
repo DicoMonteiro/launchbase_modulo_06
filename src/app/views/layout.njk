@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+
+        {% block head %}
+            <title>Launhstore</title>
+        {% endblock %}
+
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/styles.css">
+    </head>
+
+    <body>
+        {# <header>
+            <div class="links">
+                <a href="/instructors">Instructors</a>
+                <a href="/members">Members</a>
+            </div>
+        </header> #}
+        {%include "parts/header.njk" %}
+
+        {% block content %}{% endblock %}
+
+
+        {# <script src="/script.js"></script> #}
+
+        {%include "parts/footer.njk" %}
+    </body>
+
+</html>

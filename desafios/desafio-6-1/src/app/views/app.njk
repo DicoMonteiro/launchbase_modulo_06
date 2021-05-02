@@ -1,0 +1,16 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+  <div class="container">
+       <div class="inputs">
+         <div class="percent">
+             <p>PORCENTAGEM</p>
+             <input type="text" placeholder="Porcentagem" onkeydown="Mask.apply(this,'Percent')">
+         </div>
+         <div class="cpf">
+              <p>CPF</p>
+              <input type="text" placeholder="CPF" onkeydown="Mask.apply(this,'Cpf')">
+         </div>
+       </div>
+  </div>
+{% endblock %}
